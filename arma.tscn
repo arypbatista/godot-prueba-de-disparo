@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://arma.gd" type="Script" id=1]
+[ext_resource path="res://arma.png" type="Texture" id=2]
+
+[node name="Arma" type="Node2D"]
+
+script/script = ExtResource( 1 )
+velocidad_de_disparo = 1
+fuerza_de_disparo = 1000
+
+[node name="Balas" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 5.54016 )
+texture = ExtResource( 2 )
+vframes = 4
+
+[node name="origen" type="Position2D" parent="."]
+
+transform/pos = Vector2( 0, -0.459839 )
+
+[node name="salida" type="Position2D" parent="."]
+
+transform/pos = Vector2( 83.1025, 0 )
+
+
